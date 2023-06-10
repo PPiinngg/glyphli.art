@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		{% if page.title is defined %}{{ page.title }}
+		{% elif section.title is defined %}{{ section.title }}
+		{% else %}glyphli
+		{% endif %}
+	</title>
+	{#
+	<link href="/style.css" rel="stylesheet"> #}
+</head>
+
+<body>
+
+	<header style="padding: 5px;">
+		<nav style="text-align: center;">
+			heeder
+		</nav>
+	</header>
+
+	<hr style="width: 100%; margin-bottom: 20px;">
+
+	boody
+
+	<hr style="width: 100%; margin-top: 20px;">
+	<footer style="padding: 5px;">
+		<nav style="text-align: center;">
+			fottere
+		</nav>
+	</footer>
+</body>
+
+</html>
