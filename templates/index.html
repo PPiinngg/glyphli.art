@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>
-			{% if page.title is defined %}{{ page.title }}
-			{% elif section.title is defined %}{{ section.title }}
-			{% else %}glyphli
-			{% endif %}
-		</title>
-		{# <link href="/style.css" rel="stylesheet"> #}
+		<title>glyphli</title>
+		<link href="/index.css" rel="stylesheet">
 	</head>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
@@ -23,7 +18,8 @@
 					style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#fff;stroke-width:.661458;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
 					transform="translate(-9.18 -19.1)" />
 			</svg> #}
-			{% include "partials/glyph.html" %}
+			{% include "index/glyph.html" %}
+			{% include "index/sections.html" %}
 		</div>
 	</body>
 </html>
